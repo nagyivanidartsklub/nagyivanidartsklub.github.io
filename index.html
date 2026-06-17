@@ -5,9 +5,39 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Nagyiváni Darts Klub</title>
+<header>
+
+<img class="logo" src="logo.png">
+
+<h1>Nagyiváni Darts Klub</h1>
+
+<p>Ahol a pontosság, a verseny és a közösség találkozik</p>
+
+</header>
 
 <style>
+
+.logo {
+
+    width:180px;
+
+    transition:0.3s ease;
+
+    position:fixed;
+
+    top:20px;
+    left:20px;
+
+    z-index:1000;
+
+}
+
+
+.logo.kicsi {
+
+    width:80px;
+
+}
 
 * {
     box-sizing: border-box;
@@ -301,6 +331,28 @@ Egy jó csapat, ahol minden dobás számít.
 </footer>
 
 
+<script>
+
+window.addEventListener("scroll", function(){
+
+    const logo = document.querySelector(".logo");
+
+
+    if(window.scrollY > 100){
+
+        logo.classList.add("kicsi");
+
+    } else {
+
+        logo.classList.remove("kicsi");
+
+    }
+
+});
+
+
+</script>
+    
 
 </body>
 
