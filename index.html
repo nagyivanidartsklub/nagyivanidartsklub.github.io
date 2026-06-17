@@ -1,1 +1,307 @@
+<!DOCTYPE html>
+<html lang="hu">
 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nagyiváni Darts Klub</title>
+
+<style>
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000;
+    color: white;
+}
+
+
+/* FEJLÉC */
+
+header {
+    min-height: 80vh;
+    background:
+    linear-gradient(
+        rgba(0,0,0,.75),
+        rgba(120,0,0,.8)
+    ),
+    url("https://images.unsplash.com/photo-1599842057874-37393e9342df");
+
+    background-size: cover;
+    background-position: center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+
+    padding:30px;
+}
+
+
+header h1 {
+    font-size:60px;
+    text-transform:uppercase;
+}
+
+
+header p {
+    font-size:24px;
+    margin:20px;
+}
+
+
+.gomb {
+
+    background:#e00000;
+    color:white;
+    padding:15px 35px;
+
+    text-decoration:none;
+    border-radius:30px;
+
+    font-weight:bold;
+
+    transition:.3s;
+}
+
+
+.gomb:hover {
+    background:white;
+    color:black;
+}
+
+
+
+/* BLOKKOK */
+
+
+section {
+
+    padding:60px 10%;
+
+}
+
+
+.fekete {
+
+    background:#000;
+
+}
+
+
+.piros {
+
+    background:#b00000;
+
+}
+
+
+.feher {
+
+    background:white;
+    color:black;
+
+}
+
+
+
+h2 {
+
+    font-size:40px;
+    margin-bottom:25px;
+
+}
+
+
+
+.kartyak {
+
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+
+}
+
+
+
+.kartya {
+
+    background:#111;
+
+    border:2px solid #e00000;
+
+    padding:25px;
+
+    flex:1;
+    min-width:250px;
+
+    border-radius:15px;
+
+}
+
+
+.kartya h3 {
+
+    color:#ff2020;
+    margin-bottom:15px;
+
+}
+
+
+
+/* LÁBLÉC */
+
+
+footer {
+
+    background:#050505;
+
+    text-align:center;
+
+    padding:25px;
+
+    color:#aaa;
+
+}
+
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<header>
+
+<h1>Nagyiváni Darts Klub</h1>
+
+<p>Ahol a pontosság, a verseny és a közösség találkozik</p>
+
+<a class="gomb" href="#rolunk">
+Csatlakozz hozzánk
+</a>
+
+</header>
+
+
+
+
+<section class="piros" id="rolunk">
+
+<h2>Rólunk</h2>
+
+<p>
+
+Üdvözlünk a Nagyiváni Darts Klub oldalán!
+
+Klubunk célja, hogy összehozza a darts szerelmeseit,
+kezdőket és tapasztalt játékosokat egyaránt.
+
+</p>
+
+
+</section>
+
+
+
+
+<section class="fekete">
+
+
+<h2>Mit kínálunk?</h2>
+
+
+<div class="kartyak">
+
+
+<div class="kartya">
+
+<h3>🎯 Edzések</h3>
+
+<p>
+Rendszeres gyakorlási lehetőség,
+fejlődés és baráti mérkőzések.
+</p>
+
+</div>
+
+
+
+<div class="kartya">
+
+<h3>🏆 Versenyek</h3>
+
+<p>
+Helyi és környékbeli darts események,
+ahol kipróbálhatod magad.
+</p>
+
+</div>
+
+
+
+<div class="kartya">
+
+<h3>🤝 Közösség</h3>
+
+<p>
+Egy jó csapat, ahol minden dobás számít.
+</p>
+
+</div>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+<section class="feher">
+
+
+<h2>Kapcsolat</h2>
+
+
+<p>
+
+📍 Nagyiván<br><br>
+
+📞 Telefonszám: ide írd<br><br>
+
+✉️ Email: ide írd
+
+</p>
+
+
+</section>
+
+
+
+
+<footer>
+
+© 2026 Nagyiváni Darts Klub
+
+</footer>
+
+
+
+</body>
+
+</html>
