@@ -2,210 +2,359 @@
 <html lang="hu">
 
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<header>
+<title>Nagyiváni Darts Klub</title>
 
-<img class="logo" src="logo.png">
-
-<h1>Nagyiváni Darts Klub</h1>
-
-<p>Ahol a pontosság, a verseny és a közösség találkozik</p>
-
-</header>
 
 <style>
 
-.logo {
 
-    width:180px;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
 
-    transition:0.3s ease;
+
+body{
+
+    font-family:Arial, Helvetica, sans-serif;
+    background:#000;
+    color:white;
+
+}
+
+
+
+/* ===== LOGÓ ===== */
+
+
+.logo{
 
     position:fixed;
 
     top:20px;
     left:20px;
 
-    z-index:1000;
+    width:180px;
+
+    z-index:999;
+
+    transition:0.35s ease;
 
 }
 
 
-.logo.kicsi {
+
+.logo.kicsi{
 
     width:80px;
 
 }
 
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background: #000;
-    color: white;
-}
 
 
-/* FEJLÉC */
 
-header {
-    min-height: 80vh;
+
+
+
+/* ===== FEJLÉC ===== */
+
+
+header{
+
+
+    min-height:100vh;
+
+
     background:
+
     linear-gradient(
         rgba(0,0,0,.75),
-        rgba(120,0,0,.8)
+        rgba(150,0,0,.75)
     ),
-    url("logo.jpg");
 
-    background-size: cover;
-    background-position: center;
+    url("hatter.jpg");
+
+
+
+    background-size:cover;
+
+    background-position:center;
+
+
 
     display:flex;
+
     flex-direction:column;
+
     justify-content:center;
+
     align-items:center;
+
+
+
     text-align:center;
 
     padding:30px;
+
+
 }
 
 
-header h1 {
+
+
+header h1{
+
+
     font-size:60px;
+
     text-transform:uppercase;
+
+    text-shadow:0 0 20px black;
+
+
 }
 
 
-header p {
-    font-size:24px;
-    margin:20px;
+
+
+header p{
+
+
+    font-size:25px;
+
+    margin:25px;
+
+
 }
 
 
-.gomb {
+
+
+
+
+
+.gomb{
+
 
     background:#e00000;
+
     color:white;
-    padding:15px 35px;
+
+
+    padding:15px 40px;
+
 
     text-decoration:none;
+
+
     border-radius:30px;
+
 
     font-weight:bold;
 
+
     transition:.3s;
+
+
 }
 
 
-.gomb:hover {
+
+
+.gomb:hover{
+
+
     background:white;
+
     color:black;
+
+
 }
 
 
 
-/* BLOKKOK */
 
 
-section {
 
-    padding:60px 10%;
+
+
+/* ===== BLOKKOK ===== */
+
+
+section{
+
+
+    padding:70px 10%;
+
 
 }
 
 
-.fekete {
+
+
+.piros{
+
+
+    background:#a80000;
+
+
+}
+
+
+
+
+
+.fekete{
+
 
     background:#000;
 
-}
-
-
-.piros {
-
-    background:#b00000;
 
 }
 
 
-.feher {
+
+
+
+.feher{
+
 
     background:white;
+
     color:black;
 
+
 }
 
 
 
-h2 {
 
-    font-size:40px;
+
+
+
+h2{
+
+
+    font-size:42px;
+
     margin-bottom:25px;
 
+
 }
 
 
 
-.kartyak {
+
+
+
+
+
+
+/* ===== KÁRTYÁK ===== */
+
+
+
+.kartyak{
+
 
     display:flex;
+
     gap:25px;
+
     flex-wrap:wrap;
+
 
 }
 
 
 
-.kartya {
+
+
+
+.kartya{
+
 
     background:#111;
 
+
     border:2px solid #e00000;
+
 
     padding:25px;
 
-    flex:1;
-    min-width:250px;
 
     border-radius:15px;
 
+
+
+    flex:1;
+
+
+    min-width:250px;
+
+
 }
 
 
-.kartya h3 {
+
+
+
+
+.kartya h3{
+
 
     color:#ff2020;
+
     margin-bottom:15px;
+
 
 }
 
 
 
-/* LÁBLÉC */
 
 
-footer {
+
+
+
+
+/* ===== LÁBLÉC ===== */
+
+
+
+footer{
+
 
     background:#050505;
 
+
     text-align:center;
+
 
     padding:25px;
 
+
     color:#aaa;
 
+
 }
+
+
+
 
 
 </style>
 
+
 </head>
+
+
+
 
 
 
@@ -213,36 +362,81 @@ footer {
 
 
 
+
+
+<!-- FIX LOGÓ -->
+
+
+<img class="logo" src="logo.jpg">
+
+
+
+
+
+
+
 <header>
+
+
 
 <h1>Nagyiváni Darts Klub</h1>
 
-<p>Nagyiván település darts közössége</p>
+
+
+<p>
+
+Nagyiván település darts közössége
+
+</p>
+
+
+
+
 
 <a class="gomb" href="#rolunk">
-asd
+
+Csatlakozz hozzánk
+
 </a>
+
+
 
 </header>
 
 
 
 
+
+
+
+
+
 <section class="piros" id="rolunk">
+
 
 <h2>Rólunk</h2>
 
+
 <p>
+
 
 Üdvözlünk a Nagyiváni Darts Klub oldalán!
 
+
 Klubunk célja, hogy összehozza a darts szerelmeseit,
 kezdőket és tapasztalt játékosokat egyaránt.
+
 
 </p>
 
 
 </section>
+
+
+
+
+
+
 
 
 
@@ -250,53 +444,101 @@ kezdőket és tapasztalt játékosokat egyaránt.
 <section class="fekete">
 
 
+
 <h2>Mit kínálunk?</h2>
+
+
 
 
 <div class="kartyak">
 
 
+
+
+
+
+
 <div class="kartya">
+
 
 <h3>🎯 Edzések</h3>
 
+
 <p>
-Rendszeres gyakorlási lehetőség,
+
+
+Rendszeres gyakorlás,
 fejlődés és baráti mérkőzések.
+
+
 </p>
+
 
 </div>
 
 
 
+
+
+
+
+
 <div class="kartya">
+
 
 <h3>🏆 Versenyek</h3>
 
+
 <p>
-Helyi és környékbeli darts események,
-ahol kipróbálhatod magad.
+
+
+Helyi és környékbeli darts események.
+
+
 </p>
 
+
 </div>
+
+
+
+
+
 
 
 
 <div class="kartya">
 
+
 <h3>🤝 Közösség</h3>
 
+
 <p>
-Egy jó csapat, ahol minden dobás számít.
+
+
+Egy csapat, ahol minden dobás számít.
+
+
 </p>
 
+
 </div>
 
 
+
+
+
+
 </div>
+
 
 
 </section>
+
+
+
+
+
 
 
 
@@ -305,18 +547,31 @@ Egy jó csapat, ahol minden dobás számít.
 <section class="feher">
 
 
+
 <h2>Kapcsolat</h2>
+
 
 
 <p>
 
-📍 Nagyiván<br><br>
 
-📞 Telefonszám: ide írd<br><br>
+📍 Nagyiván
+
+<br><br>
+
+
+📞 Telefonszám: ide írd
+
+
+<br><br>
+
 
 ✉️ Email: ide írd
 
+
+
 </p>
+
 
 
 </section>
@@ -324,35 +579,61 @@ Egy jó csapat, ahol minden dobás számít.
 
 
 
+
+
+
+
+
 <footer>
 
+
 © 2026 Nagyiváni Darts Klub
+
 
 </footer>
 
 
+
+
+
+
+
+
 <script>
 
+
 window.addEventListener("scroll", function(){
+
 
     const logo = document.querySelector(".logo");
 
 
+
     if(window.scrollY > 100){
+
 
         logo.classList.add("kicsi");
 
-    } else {
+
+    }else{
+
 
         logo.classList.remove("kicsi");
 
+
     }
+
 
 });
 
 
+
 </script>
-    
+
+
+
+
+
 
 </body>
 
